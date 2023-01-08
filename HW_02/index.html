@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+	<script>
+		console.log('1.');
+		let num1 = prompt('Введите первое число:');
+		let num2 = prompt('Введите второе число:');
+
+		if (num1 <= 1) {
+			console.log(`Введённое число = ${num1} - меньше либо равна 1`);
+		} else {
+			console.log(`Введённое число = ${num1} - больше 1`);
+		}
+		if (num2 >= 3) {
+			console.log(`Введённое число = ${num2} - больше либо равна 3`);
+		} else {
+			console.log(`Введённое число = ${num2} - меньше 3`);
+		}
+
+		console.log('2.');
+		let test = true;
+
+		console.log((test === true) ? '+++' : '---');
+
+		console.log('3.');
+		let day = Math.floor(Math.random() * 32)
+		if (day < 11) {
+			console.log(`${day} является первой декадой месяца`);
+		} else if (day > 20) {
+			console.log(`${day} является третьей декадой месяца`);
+		} else {
+			console.log(`${day} является второй декадой месяца`);
+		}
+
+		console.log('4.');
+		let n = prompt('Введите число: ');
+		let units = n % 10;
+		let tens = ~~(n / 10 % 10);
+		let hundreds = ~~(n / 100 % 10);
+		console.log(`В числе ${n} количество сотен: ${hundreds}, десятков: ${tens}, единиц: ${units}`)
+
+
+	</script>
+</body>
+
+</html>
