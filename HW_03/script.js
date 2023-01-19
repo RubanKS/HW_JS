@@ -3,7 +3,7 @@ const numCub = () => 2 ** 3 + 3 ** 3;
 console.log(numCub());
 
 console.log('\nЗадача 2');
-let n = prompt('Введите число n', '');
+let n = prompt('Введите число');
 const percSalary = () => n * 0.87;
 console.log(isNaN(n) || n === '' || n === null ? 'Значение задано неверно' :
 	`Размер заработной платы за вычетом налогов равен ${percSalary()}`);
