@@ -44,11 +44,15 @@
 		не было.
 		 */
 		const btn = document.querySelector(".btn");
-		if (btn.classList.contains("btn-secondary")) {
-			btn.classList.remove("btn-secondary");
-		} else {
-			btn.classList.add("btn-secondary");
-		}
+		// if (btn.classList.contains("btn-secondary")) {
+		// 	btn.classList.remove("btn-secondary");
+		// } else {
+		// 	btn.classList.add("btn-secondary");
+		// }
+
+		// btn.classList.contains("btn-secondary") ? btn.classList.remove("btn-secondary") : btn.classList.add("btn-secondary")
+
+		btn.classList.toggle("btn-secondary");
 		/*
 		3. Необходимо удалить класс "dropdown-menu" у элемента, у которого
 		присутствует класс "menu".
