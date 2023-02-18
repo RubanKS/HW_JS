@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.content {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.fact {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin: 20px;
+			padding: 20px;
+			border: 2px solid black;
+			border-radius: 10px;
+			max-width: 600px;
+		}
+
+		.number {
+			font-size: 32px;
+			margin: 10px 0;
+		}
+	</style>
+	<script src="data.js"></script>
+</head>
+
+<body>
+	<div class="content"></div>
+
+	<script>
+		const data = JSON.parse(dataInfo);
+		const content = document.querySelector('.content');
+
+		data.forEach(item => {
+			const fact = document.createElement('div');
+			fact.classList.add('fact');
+
+			const number = document.createElement('h2');
+			number.innerText = item.number;
+			number.classList.add('number');
+			fact.appendChild(number);
+
+			const text = document.createElement('p');
+			text.innerText = item.text;
+			fact.appendChild(text);
+
+			content.appendChild(fact);
+		});
+	</script>
+</body>
+
+</html>
