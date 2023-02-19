@@ -83,7 +83,9 @@
 					isFormValid = false; // если значение пустое, то isFormValid устанавливается в false
 					input.classList.add('error'); // добавляется класс error
 					input.style.backgroundColor = 'red';
-				}
+				} else {
+					input.classList.remove('error');
+				};
 			});
 			return isFormValid;
 		}
