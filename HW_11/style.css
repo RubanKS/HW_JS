@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.content {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 48px;
+	padding-top: 96px;
+}
+
+.catalog_title {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 36px;
+	color: #222222;
+}
+
+.catalog_title_text {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #9F9F9F;
+}
+
+.catalog {
+	max-width: 1140px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin: 0 auto;
+}
+
+.catalog_item {
+	background: #F8F8F8;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.item_link {}
+
+.item_link:hover {
+	background: rgba(58, 56, 56, 0.86);
+	opacity: 0.25;
+}
+
+.catalog_item_title {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;
+	color: #000000;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 24px 0 16px 16px;
+}
+
+.catalog_item_text {
+	width: 314.74px;
+	height: 51px;
+
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+	color: #5D5D5D;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0 0 16px 16px;
+}
+
+.price {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #F16D7F;
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+	margin: 0 0 24px 16px;
+}
